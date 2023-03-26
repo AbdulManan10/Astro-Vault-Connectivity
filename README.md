@@ -3,7 +3,7 @@
 ### Step: 1
 Storing secrets in your Vault cluster using Vault CLI:
 
-vault kv put secret/variables/<secret-key> value=<secret-value>
+vault kv put secret/variables/<"secret-key"> value=<"secret-value">
 
 ### Step: 2
 Creating a ACL policy to retrieve secret from your Vault cluster:
