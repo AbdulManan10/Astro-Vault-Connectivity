@@ -1,0 +1,3 @@
+FROM quay.io/astronomer/astro-runtime:7.2.0
+ENV AIRFLOW__SECRETS__BACKEND=airflow.providers.hashicorp.secrets.vault.VaultBackend
+ENV AIRFLOW__SECRETS__BACKEND_KWARGS='{"connections_path" :"connections", "variables_path": "variables","namespace": "admin", "mount_point": "secret", "config_path": null, "url": "https://vault-cluster-public-vault-388d931b.043735e3.z1.hashicorp.cloud:8200", "auth_type": "approle", "role_id":"dfb1df78-48ba-f970-97e5-9c025b6cd28e", "secret_id":"fb21df17-dd2a-2d79-c425-b3c08b35bdd1"}'
